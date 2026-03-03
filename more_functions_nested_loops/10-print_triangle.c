@@ -1,8 +1,14 @@
 #include "main.h"
 
+/**
+ * print_triangle - prints a triangle
+ * @size: size of the triangle
+ *
+ * Return: nothing
+ */
 void print_triangle(int size)
 {
-	int i, j, spaces, hashes;
+	int i, j;
 
 	if (size <= 0)
 	{
@@ -12,15 +18,10 @@ void print_triangle(int size)
 
 	for (i = 1; i <= size; i++)
 	{
-		spaces = size - i;
-		hashes = i;
-
-		for (j = 0; j < spaces; j++)
+		for (j = 0; j < size - i; j++)
 			_putchar(' ');
-
-		for (j = 0; j < hashes; j++)
+		for (j = 0; j < i; j++)
 			_putchar('#');
-
 		_putchar('\n');
 	}
 }

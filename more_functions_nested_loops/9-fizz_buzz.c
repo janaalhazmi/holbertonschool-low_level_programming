@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - prints FizzBuzz from 1 to 100
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
 	int i;
@@ -18,7 +23,6 @@ int main(void)
 		if (i != 100)
 			printf(" ");
 	}
-
 	printf("\n");
 	return (0);
 }
